@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+  <header>
+    <h1 id="title" class="mb3">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group mb-3">
+      <label for="name" id="name-label">Name</label>
+      <input type="text" id="number" class="form-control" name="name" placeholder="Enter your name" required>
+    </div>
+
+    <div class=" form-group mb-3">
+      <label for="email" id="email-label">Email</label>
+      <input type="email" id="email" class="form-control" name="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class=" form-group mb-3">
+      <label for="age" id="number-label">Age(optionel)</label>
+      <input type="number" id="age" class="form-control" name="age" placeholder="Age" required>
+    </div>
+
+    Which option best describes your current role?
+    <select id="dropdown" class=" form-group form-select mb-3" aria-label="Default select example">
+
+      <option selected>Select current role</option>
+      <option value="1">Student</option>
+      <option value="2">Full time job</option>
+      <option value="3">Full time learner</option>
+      <option value="4">Other</option>
+    </select>
+    
+    <div class=" form-group form-check mb-3">
+      Would you recommend freeCodeCamp to a friend? <br>
+      <input type="radio" name="stack" id="stack1">
+      <label for="stack1">Definitely</label>
+
+      <input type="radio" name="stack" id="stack2">
+      <label for="stack2">Maybe</label>
+
+      <input type="radio" name="stack" id="stack3">
+      <label for="stack3">Not sure</label>
+    </div>
+
+    <select class=" form-group form-select mb-3" aria-label="Select an option">
+      Which option best describes your current role?
+      <option selected>Select an option</option>
+      <option value="1">Challanges</option>
+      <option value="2">Projects</option>
+      <option value="3">Community</option>
+      <option value="4">Open source</option>
+    </select>
+
+    What would you like to see improved? (Check all that apply)
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="flexCheckDefault" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Front-end Projects
+      </label>
+    </div>
+    <div class=" form-check">
+      <input class="form-check-input" type="checkbox" value="flexCheckDefault" id="flexCheckChecked">
+      <label class="form-check-label" for="flexCheckChecked">
+        Back-end Projects
+      </label>
+    </div>
+    <div class="  form-check">
+      <input class="form-check-input" type="checkbox" value="flexCheckDefault" id="flexCheckChecked" checked>
+      <label class="form-check-label" for="flexCheckChecked">
+        Data Visualization
+      </label>
+    </div>
+    <div class="  form-check">
+      <input class="form-check-input" type="checkbox" value="flexCheckDefault" id="flexCheckChecked" checked>
+      <label class="form-check-label" for="flexCheckChecked">
+        Challenges
+      </label>
+    </div>
+    <div class=" form-check">
+      <input class="form-check-input" type="checkbox" value="flexCheckDefault" id="flexCheckChecked">
+      <label class="form-check-label" for="flexCheckChecked">
+        Open Source Community
+      </label>
+    </div>
+    <div class=" form-check">
+      <input class="form-check-input" type="checkbox" value="flexCheckDefault" id="flexCheckChecked">
+      <label class="form-check-label" for="flexCheckChecked">
+        Gitter help rooms
+      </label>
+    </div>
+
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="flexCheckDefault" id="flexCheckChecked">
+      <label class="form-check-label" for="flexCheckChecked">
+        Videos
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="flexCheckDefault" id="flexCheckChecked" checked>
+      <label class="form-check-label" for="flexCheckChecked">
+        Wiki
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="flexCheckDefault" id="flexCheckChecked">
+      <label class="form-check-label" for="flexCheckChecked">
+        Forum
+      </label>
+    </div>
+    <div class="form-check mb-3">
+      <input class="form-check-input" type="checkbox" value="flexCheckDefault" id="flexCheckChecked">
+      <label class="form-check-label" for="flexCheckChecked">
+        Additional Courses
+      </label>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="area" class="form-label">Any comments or suggestions?</label>
+      <textarea class="form-control" id="area" rows="5" placeholder="Enter your comment here..."></textarea>
+    </div>
+
+    <button type="submit" id="submit" class="btn btn-success">Submit</button>
+  </form>
+
+</body>
+
+</html>
